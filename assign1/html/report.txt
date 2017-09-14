@@ -1,0 +1,202 @@
+@charset "UTF-8";
+/*responsive Design*/
+* {
+    box-sizing: border-box;
+}
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+[class*="col-"] {
+    float: left;
+    padding: 5px;
+}
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    [class*="col-"] {
+        width: 100%;
+    }
+
+	.buildingImage {
+		width:80%;
+		height:auto;
+	}
+	.authorList img{
+		width:80%;
+		height:auto;
+	}
+}
+
+.banner {
+  background-color: #11233b;
+  color: white;
+  
+  margin-left:20px;
+  margin-right:20px;
+  padding-left:10px;
+  padding-top:10px;
+  padding-right:10px;
+  padding-bottom:20px;
+}
+.banner img{
+	width:200px;
+	height:auto;
+	padding-top:0px;
+	padding-bottom:10px;	
+	float:left;
+}
+.banner h1{
+	padding-left:20px;
+}
+
+.mainMenu{
+	clear:left;
+  top:5px;
+  position:sticky;
+}
+
+.mainNav  {
+  background-color: #20416c;
+  padding: 1px;
+  margin-top: 1px;
+  margin-bottom: 2px;
+  margin-left:20px;
+  margin-right:20px
+
+}
+
+
+.mainNav a {
+  color: white;
+}
+
+.mainNav li {
+  display: inline;
+  margin-left: 10px;
+  margin-right: 15px;
+  font-size: 20px;
+  font-variant: small-caps;
+  font-weight: bold;
+}
+
+
+.buildingImage{
+
+	width:	100%;
+	height: auto;
+	padding-right:0px;
+	border-radius: 2px;
+	float:left;
+	
+}
+
+.treeInfo{
+	margin-top:5px;
+	margin-left:20px;
+	margin-right:20px;
+	padding-left:5px;
+	padding-right:10px;
+	padding-top:3px;
+	padding-bottom:3px;
+	background-color:Lavender ;
+}
+
+
+
+.treeInfo p{
+	
+	padding-left:0px;
+	text-align:justify;
+	font-size:16px;
+	
+}
+
+.authorList
+{
+	margin-left:20px;
+	margin-right:20px;
+}
+
+.authorList hr
+{
+	margin-top:-10px;
+}
+strong{
+	color:blue;
+}
+.authorItem{
+	clear:left;
+	border-top-width:10px;
+	border-top-style: solid;
+	border-top-color:CadetBlue ;	
+}
+
+.authorList img{
+	width:100%;
+	height:auto;
+	margin-top:1px;
+	margin-bottom:1px;
+}
+
+
+.authonInfo
+{
+
+	text-align:justify;
+
+}
+
+.book {
+	margin-right:10px;
+	margin-top:20px;
+	margin-bottom:20px;
+	padding-left:5px;
+	padding-right:5px;
+	padding-top: 2px;
+	padding-bottom:2px;
+	font-style: italic;
+	color:DarkMagenta;
+	text-decoration:none;
+	font-weight: bold;
+}
+
+.authorItem  a{
+
+}
+
+
+.foot 
+{
+	clear:left;
+	display:block;
+	background-color: #20416c;
+	padding: 1px;
+	margin-top: -10px;
+	margin-bottom: 2px;
+
+}
+
+.textright
+{
+	color:white;
+	text-align:right;
+	margin-right:20px;
+}
+
+
+	
+

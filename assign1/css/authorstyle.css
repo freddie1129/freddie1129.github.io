@@ -1,0 +1,282 @@
+/*Author page css*/
+* {
+    box-sizing: border-box;
+}
+/*responsive Design*/
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+[class*="col-"] {
+    float: left;
+    padding: 5px;
+	margin-right:0px;
+}
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    [class*="col-"] {
+        width: 100%;
+    }
+
+}
+
+
+
+.banner {
+  background-color: #11233b;
+  color: white;
+  
+  margin-left:20px;
+  margin-right:20px;
+  padding-left:10px;
+  padding-top:10px;
+  padding-right:10px;
+  padding-bottom:20px;
+}
+.banner img{
+	width:200px;
+	height:auto;
+	padding-top:0px;
+	padding-bottom:10px;	
+	float:left;
+}
+.banner h1{
+	padding-left:20px;
+}
+
+
+
+.mainNav  {
+  background-color: #20416c;
+  padding: 1px;
+  margin-top: 1px;
+  margin-bottom: 2px;
+  margin-left:20px;
+  margin-right:20px
+
+}
+
+
+.mainNav a {
+  color: white;
+}
+
+.mainNav li {
+  display: inline;
+  margin-left: 10px;
+  margin-right: 15px;
+  font-size: 20px;
+  font-variant: small-caps;
+  font-weight: bold;
+}
+
+.col-3 .sidebar {
+	margin-left:15px;
+	margin-top:-10px;	
+	margin-bottom:20px;
+	padding-bottom:20px;
+	background-color: Bisque;
+	top:5px;
+	position:sticky;
+}
+.sidebar {
+
+	top:5px;
+	position:sticky;
+}
+
+.sidebar h3{
+	margin-top:10px;
+	padding-top:15px;
+	text-align:center;
+}
+
+.sidebar li{
+	padding-top:5px
+}
+
+.sidebar li a{
+	text-decoration:none;
+}
+
+
+/*.authorContent {
+	margin-top:-20px;
+	margin-right:0px;
+}*/
+.AutorInfo
+{
+	margin-right:15px;
+	padding:0px;
+}
+.authorname {
+	background-color:Lavender;
+	text-align:center;
+	padding-top:10px;
+	padding-bottom:10px;
+	margin-top:0px;
+	margin-right:0px;
+	padding-right:0px;
+	font-size:25px;
+}
+
+.authoAutorInforImage {
+	display: block;
+    margin: 0 auto;
+	border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 5px;
+    width: 20%;
+	height:auto;
+}
+
+.biography {
+	padding-left:15px;
+	padding-right:0px;
+	text-align:justify;
+}
+.bookList {
+	text-align:center;
+	background-color:Lavender;
+	font-size:25px;
+	padding-top:10px;
+	padding-bottom:10px;
+	margin-right:15px;
+}
+
+
+
+.bookimage img{
+	/*margin:10px,10px,10px,10px;
+	padding:10px,10px,10px,10px;*/
+	width:80%;
+	height:auto;
+	display: block;
+	   margin: 0 auto;
+	
+}
+
+.bookDiscription
+{
+/*	margin-left:170px;
+	margin-right:10px;*/
+	margin-top:-20px;
+	text-align:justify;
+}
+
+.bookDiscription h3{
+	color:blue;
+}
+
+.comments h2
+{
+  font-variant: small-caps;
+  font-weight: bold;
+  color:DimGrey;
+  padding-top:10px;
+  margin-left: 10px;
+  margin-bottom:5px;
+	padding-bottom:0px;
+  clear:left;
+  	margin-right:15px;
+}
+.avatar img{
+	float:right;
+	border-color: #D7D7D7;
+}
+
+.comments .avatar {
+    float: right;
+    margin: 0 0 10px 10px;
+    padding: 3px;
+    border: 1px solid;
+}
+
+
+.comments ul {
+    margin: 0 0 20px 0;
+    padding: 0;
+    list-style: none;
+
+}
+
+.comments li {
+    color: inherit;
+    background-color: #f2f2f2     ;
+	padding-left:10px;
+	padding-right:10px;
+	padding-top:10px;
+	padding-bottom:10px;
+	margin-bottom:10px;
+	text-align:justify;
+	
+}
+
+.comments address {
+    font-weight: bold;
+    font-style: normal;
+}
+
+.comments	a {
+    color: #E43F21;
+	text-decoration:none;
+}
+
+.comments time {
+    font-size: 10px;
+}
+
+.comments .comcont p {
+    margin: 15px 5px 15px 15px;
+    padding: 0;
+}
+ 
+footer  {
+  background-color: #20416c;
+  margin-left:20px;
+  margin-right:20px
+}
+
+
+.foot 
+{
+	display:block;
+	background-color: #20416c;
+	padding: 1px;
+	margin-top: -10px;
+	margin-bottom: 2px;
+	margin-left:20px;
+	margin-right:20px
+}
+
+
+
+.textright
+{
+	color:white;
+	text-align:right;
+	margin-right:20px;
+}
+
+
+
+
+
+
+
+
+

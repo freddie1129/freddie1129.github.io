@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<!--Homepage of Tree-shraw Website-->
+<html lang="en">
+    <head >
+        <meta charset="UTF-8">
+        <title>Tree-Shrew</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../css/report.css">	
+    </head>
+    <body>
+
+        <!--Banner and Menu-->
+        <header class = "banner">
+            <img src="../images/logo.png" alt="logo">
+            <h1>Tree-Shrew Publishing</h1>
+        </header>
+        <div class="mainMenu">
+            <nav class="mainNav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="index.html#authorList">Authors</a></li>
+                    <li><a href="about.html">Contact</a></li>
+					<li><a href="report.html">Report</a></li>
+                </ul>
+            </nav>
+        </div>
+		<div class = "report">
+		<h1>Summary of Tree-Shrew Publishing Example Website Design</h1>
+		<h2>1.Objective</h2>
+		<p class="objective">According to the requirements from Tree-Shrew Publishing Company, design a demo website to compete the contract. The website should be simple, attractive, easy to navigate and able to be responsive to different devices, such as desktop, table and mobile.</p>
+		<h2>2.Missions</h2>
+	
+                    <p>1) Design a company logo, which should represents the value of the company in a simple, easy to remember and impressive way.</p>
+                    <p>2) Design three main webpage to show the company.</p>
+                    <ul class="pageclass">
+						<li>Welcome page.</li>
+						<li>Home page, including the introduction section about this company, authors section showing the registered authors in the company and their brief introduction. </li>
+						<li>Author page. Each author has a specific webpage to show biography and books they published, so there would be many author pages depending on the author number. The style of all author pages is same and come from same template. </li>
+					</ul>
+
+		<h2>3.Techniques</h2>
+		<p>1) Using standard HTML5 and CCS3 to implement the whole website, without any third-part framework.</p> 
+		<p>2) Implementing the responsive webpage by elegant HTML5 and CCS3 design, without any other third-part Library support.</p>
+		<h2>4.Design</h2>
+		<h3>1) Log Design</h3>
+		<img class="logoImage" src="../images/logo_black.png" alt="logo_back">
+		<p class="figtext">Fig 1 Tree-Shrew Publishing Logo</p>
+		<p>This logo depicts a small boat sailing in the sea. The string “Tree-Shrew Publishing” in this logo can be understood as a wind to push the boat. The elegant boat design makes the boat looks like a yacht or a boat loading books, representing the authors and their books. To emphasize the importance of “Tree-Shrew Publishing” company and make a deep first impression to web visitors, the first letter “T” is colored as red. <br><strong>The Logo design Photoshop file is attached in submission</strong>.</p>
+		<h3>2) Website hierarchy design</h3>
+		<p>Website hierarchy is shown as figure below.</p>
+		<img class="authorImage" src="../images/her.png" alt="hierarchy">
+				<p class="figtext">Fig 2 Website Hierarchy</p>
+		<h3>3) Responsive webpage design</h3>
+		<p>To maximize the flexibility of this web site for diverse devices, including desktop, tablet and mobile browser, all webpage should be designed in a responsive way, as show in Fig 3.</p>
+		<img class="authorImage" src="../images/responsive.png" alt="hierarchy">
+		<p class="figtext">Fig 3 Responsive Webpage Demo</p>
+		<p>The main technique to implement the responsive webpage is grid-view design. For large size items shown on the screen, like images, percentage size is used in css instead of the fixed size value. The horizontal layout sections would become vertical layout sections when the screen’s width is less than 786px. The ccs code related to responsive webpage is show as below:</p>
+		<pre>
+* {
+    box-sizing: border-box;
+}
+/*responsive Design*/
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+[class*="col-"] {
+    float: left;
+    padding: 5px;
+	margin-right:0px;
+}
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    [class*="col-"] {
+        width: 100%;
+    }
+}</pre>
+<p>Fig 4 is an example of the responsive design in this project. </p>
+
+<img class="authorImage" src="../images/example.png" alt="hierarchy">
+<p class="figtext">Fig 4 Responsive webpage (Left: small screen, Right: big screen)</p>
+
+		<h2 >5.Summary</h2>
+		<p>Tree-Shrew Publishing website design is a simple, attractive and responsive website design. All pages are implemented by Standard HTML5 and CSS3 without other third-part framework. It can suit large desktop screen, as well as small mobile screen. It is easy to navigate and operation. Tree-Shrew Publishing company’s value and business are shown well.</p>
+		<h2 class="reference">References</h2>
+		<p>The author information and book covers using in this example website are come from https://www.amazon.com. Four authors’ information are used as examples, they are:<p>
+<p>a)	<strong>Ruth Ware</strong>
+<a href="https://www.amazon.com/Ruth-Ware/e/B00OA8QDT0/ref=sr_ntt_srch_lnk_1?qid=1503216080&sr=8-1" target="_blank">https://www.amazon.com/Ruth-Ware/e/B00OA8QDT0/ref=sr_ntt_srch_lnk_1?qid=1503216080&sr=8-1</a>
+</p>
+<p>b)	<strong>Tom Sancton</strong>
+<a href="https://www.amazon.com/Tom-Sancton/e/B001JP8QH4/ref=sr_ntt_srch_lnk_1?qid=1503216117&sr=8-1" target="_blank">
+https://www.amazon.com/Tom-Sancton/e/B001JP8QH4/ref=sr_ntt_srch_lnk_1?qid=1503216117&sr=8-1</a></p>
+<p>c)	<strong>Mark R. Levin</strong>
+<a href="https://www.amazon.com/Mark-R.-Levin/e/B001JS3OIM/ref=sr_ntt_srch_lnk_1?qid=1503216144&sr=8-1" target="_blank">https://www.amazon.com/Mark-R.-Levin/e/B001JS3OIM/ref=sr_ntt_srch_lnk_1?qid=1503216144&sr=8-1<a></p>
+<p>d)	<strong>Robert C. Martin</strong>
+<a href="https://www.amazon.com/Robert-C.-Martin/e/B000APG87E/ref=sr_ntt_srch_lnk_1?qid=1503216192&sr=8-1" target="_blank">
+https://www.amazon.com/Robert-C.-Martin/e/B000APG87E/ref=sr_ntt_srch_lnk_1?qid=1503216192&sr=8-1<a></p>
+		</div>   
+            <div class="foot">
+                <p class="textright">Powered by CHEN ZHU</p>
+            </div>
+    </body>
+</html>
