@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<!--
+This page is Mountain View Travel Agency customer questionary page.
+Other needed file: form.css, form.js
+Author: Chen Zhu
+Version: 1.0
+Last modify time: 09/10/2017
+-->
+<html lang="en">
+    <head>
+        <!-- jQuery version 2.2.1-->
+        <script src="jquery-2.2.1.min.js" type="text/javascript">
+        </script>
+        <script src="form.js" type="text/javascript">
+            // Javascript functions for this page
+        </script>
+        <title>Assignment</title>
+        <!--css for this page-->
+        <link rel="stylesheet" href="form.css">
+    </head>
+    
+    <body>
+        <!--page header-->
+        <header class="banner">
+            <img class="logo" src="World.svg" alt="logo">
+            <img class="name" src="name.png" alt="logo">
+        </header>
+        <!--promotion information for customers-->
+		<h2 class="formtitle">Finish Questions. Get <span>FREE</span> Travel Plan.</h2>
+		<p class="helpInfo">Tips: click <button class="helper" id="helper_0" type="button" disabled>?</button> to get help.<p>
+        <!--form start from here-->       
+	   <form action="https://tau.usq.edu.au/courses/CSC2406/reflect.php" method="post" id="form1">            
+            <!--help tips for fill out this form-->
+			<p class="progress"><span id="progress_1">&nbsp;1&nbsp;</span><span id="progress_2">&nbsp;2&nbsp;</span><span id="progress_3">&nbsp;3&nbsp;</span><span id="progress_4">&nbsp;4&nbsp;</span><span id="progress_5">&nbsp;5&nbsp;</span></p>
+            <!--This form includes four sections.-->
+            <!--section1-->
+            <section id="section1">
+                <!--First name input field-->
+                <p class="label"><label id="labelfirstname" for="firstname">1.First Name:&nbsp;&nbsp;<button class="helper" id="helper_1" type="button">?</button></label></p>
+                <div class="tips" id="tips_1">
+                    <p>Input your first name.</p>
+                    <p>First name should not be more than 20 characters.</p>
+                </div>
+                <input type="text" id="firstname" name="firstname" 
+                       required="required" placeholder="Input your first name." size="40"/>
+                <!--Last name input field-->
+                <p class="label"><label id="labellastname" for="lastname">2.Last Name:&nbsp;&nbsp;<button class="helper" id="helper_2" type="button">?</button></label></p>
+                <div class="tips" id="tips_2">
+                    <p>Input your last name.</p>
+                    <p>Last name should not be more than 20 characters.</p>
+                </div>
+                <input type="text" id="lastname" name="lastname" 
+                       required="required" placeholder="Input your last name." size="40"/>
+                <!--Gender input field, use datalist-->
+                <p class="label"><label id="labelgender" for="gender">3.Gender:&nbsp;&nbsp;<button class="helper" id="helper_3" type="button">?</button></label></p>
+                <div class="tips" id="tips_3">
+                    <p>Input your first name.</p>
+                    <p>Choose your gender form the pull down list, or input your gender.</p>
+                    <p>Your gender description should not be more than 20 characters</p>
+                </div>
+                <input id="gender" list="genderlist" required="required" placeholder="Choose your gender" name="gender">
+                <datalist id="genderlist">
+                    <option value="male"/>
+                    <option value="female"/>
+                    <option value="transgender"/>
+                    <option value="male-to-female"/>
+                    <option value="female-to-male"/>
+                    <option value="gender diverse"/>
+                    <option value="intersex"/>
+                </datalist>                
+                <!--Input birthday field-->
+                <p class="label"><label id="labelbirthday" for="birthday">4.Date of Birth&nbsp;&nbsp;<button class="helper" id="helper_4" type="button">?</button></label></p>
+                <input type="date" id="birthday" name="birthday" size="40"/>     
+                <div class="tips" id="tips_4">
+                    <p>Input your birthday.</p>
+                    <p>Choose your birthday form the data picker.</p>
+                    <p>Your age should be between 0 and 100 yrs.</p>
+                </div>
+                <!--Input occupation field-->
+                <p class="label"><label id="labeloccupation" for="occupation">5.Occupation:&nbsp;&nbsp;<button class="helper" id="helper_5" type="button">?</button></label></p>
+                <div class="tips" id="tips_5">
+                    <p>Input your occupation.</p>
+                    <p>Your occupation should not be more than 20 characters.</p>
+                </div>
+                <input type="text" id="occupation" name="occupation" 
+                       placeholder="Input your Occupation." size="40"/>
+                <!--Input postal address-->
+                <p class="label"><label id="labelpostaladdress" for="postaladdress">6.Postal Address:&nbsp;&nbsp;<button class="helper" id="helper_6" type="button">?</button></label></p>
+                <div class="tips" id="tips_6">
+                    <p>Input your postal address.</p>
+                    <p>Your postal address should not be more than 20 characters.</p>
+                </div>
+                <input type="text" id="postaladdress" name="postaladdress" 
+                       placeholder="Input your postal address." size="40"/>
+                <!--Input postcode-->
+                <p class="label"><label id="labelpostcode" for="postcode">7.Postcode:&nbsp;&nbsp;<button class="helper" id="helper_7" type="button">?</button></label></p>
+                <div class="tips" id="tips_7">
+                    <p>Input your postcode.</p>
+                    <p>Your postcode should be a 4 digits number.</p>
+                </div>
+                <input type="text" id="postcode" name="postcode" 
+                       placeholder="Input your Postcode." size="40" maxlength="4"/>
+                <!--Input phone number-->
+                <p class="label"><label id="labelphonenum" for="phonenum">8.Phone Num:&nbsp;&nbsp;<button class="helper" id="helper_8" type="button">?</button></label></p>
+                <div class="tips" id="tips_8">
+                    <p>Input your phone number.</p>
+                    <p>Your postcode should be a 10 digits number.</p>
+                </div>
+                <input type="tel" id="phonenum" name="phonenum" 
+                       placeholder="Input your phone number(10 digits)." size="40" maxlength="10"/>
+                <!--Input email address-->
+                <p class="label"><label id="labelemailaddress" for="emailaddress">9.Email Address:&nbsp;&nbsp;<button class="helper" id="helper_9" type="button">?</button></label></p>
+                <div class="tips" id="tips_9">
+                    <p>Input your email address.</p>
+                    <p>Correct email address likes: name@gmail.com</p>
+                </div>
+                <input type="email" id="emailaddress" name="emailaddress" 
+                       required="required" placeholder="Input your Email address." size="40"/>
+            </section>
+            
+            <!--section2, for partner-->
+            <section id="section2">
+                <p class="label"><label for="havingpartner">10.Do you have a partner?&nbsp;&nbsp;<button class="helper" id="helper_10" type="button">?</button></label></p>
+                <div class="tips" id="tips_10">
+                    <p>Input your partner's information.</p>
+                    <p>Enter your partner's information if your tick Yes.</p>
+                </div>
+                <div class="row">
+                    <div class="col-1"><p><input type="radio" name="partner" value="Yes"><span class="radiotext" id="partnerYes">Yes</span></p></div>
+                    <div class="col-1"><p><input type="radio" name="partner" value="No" checked><span class="radiotext" id="partnerNo">No</span></p></div>
+                </div>
+            </section>
+            <!--section3, for child-->
+            <section id="section3">
+                <p class="label"><label for="havingchildren">11.Do you have children?&nbsp;&nbsp;<button class="helper" id="helper_11" type="button">?</button></label></p>
+                <div class="tips" id="tips_11">
+                    <p>Input your children's information.</p>
+                    <p>Enter your children's information if your tick Yes.</p>
+                    <p>Add a child by click the <button type="button" disabled>Add a child</button></p>
+                </div>
+                <div class="row">
+                    <div class="col-1"><p><input type="radio" name="children" value="Yes"><span class="radiotext" id="childrenYes">Yes</span></p></div>
+                    <div class="col-1"><p><input type="radio" name="children" value="No" checked><span class="radiotext" id="childrenNo">No</span></p></div>
+                </div>
+            </section>
+            <!--section 4-->
+            <section id="section4">
+                <!--input preferred travel date-->
+                <p class="label"><label id="labeltaveeldate" for="taveeldate">12.Preferred Travel Date:&nbsp;&nbsp;<button class="helper" id="helper_12" type="button">?</button></label></p>
+                <div class="tips" id="tips_12">
+                    <p>Choose your planed travel date.</p>
+                    <p>Your travel date should be in three years.</p>
+                </div>
+                <input type="date" id="taveeldate" name="taveeldate" size="40"/>   
+                <!--input your rough travel budget-->
+                <p class="label"><label id="labelbudgerange" for="budgerange">13.Budge Range:&nbsp;&nbsp;<button class="helper" id="helper_13" type="button">?</button></label></p>
+                <div class="tips" id="tips_13">
+                    <p>Choose your budged range from below choices.</p>                    
+                </div>
+                <div class="row">
+                    <div class="col-3"><p><input type="radio" name="budgerange" value="1"><span class="radiotext" >less than $1000</span></p></div>
+                    <div class="col-3"><p><input type="radio" name="budgerange" value="2" checked><span class="radiotext" >$1000 to $3000</span></p></div>
+                    <div class="col-3"><p><input type="radio" name="budgerange" value="3" ><span class="radiotext" >$3000 to $5000</span></p></div>
+                    <div class="col-3"><p><input type="radio" name="budgerange" value="4" ><span class="radiotext" >$5000 to $10000</span></p></div>
+                    <div class="col-3"><p><input type="radio" name="budgerange" value="5" ><span class="radiotext" >more than $10000</span></p></div>
+                </div>
+                <!--Would you like travel all the time-->
+                <p class="label"><label id="labeltraveltime" for="traveltime">14.Want to travel all the time?&nbsp;&nbsp;<button class="helper" id="helper_14" type="button">?</button></label></p>
+                <div class="tips" id="tips_14">
+                    <p>Would you like traveling all the time during your whole holiday.</p>           
+                    <p>Choose Yes or No.</p>
+                </div>
+                <div class="row">
+                    <div class="col-3"><p><input type="radio" name="traveltime" value="yes" checked><span class="radiotext" >Yes</span></p></div>
+                    <div class="col-3"><p><input type="radio" name="traveltime" value="no" ><span class="radiotext" >No</span></p></div>
+                </div>
+                <!--Would you enjoy strenuous activities-->
+                <p class="label"><label id="labelenjoy" for="enjoy">15.Enjoy strenuous activities?&nbsp;&nbsp;<button class="helper" id="helper_15" type="button">?</button></label></p>
+                <div class="tips" id="tips_15">
+                    <p>Do you enjoy strenuous activities during your holiday.</p>       
+                    <p>Choose Yes or No.</p>
+                </div>
+                <div class="row">
+                    <div class="col-3"><p><input type="radio" name="enjoy" value="yes" checked><span class="radiotext" >Yes</span></p></div>
+                    <div class="col-3"><p><input type="radio" name="enjoy" value="no" ><span class="radiotext" >No</span></p></div>
+                </div>
+                <!-- choose you interests-->
+                <p class="label"><label id="labelinterest" for="interest">16.Choose your interests:&nbsp;&nbsp;<button class="helper" id="helper_16" type="button">?</button></label></p>
+                <div class="tips" id="tips_16">
+                    <p>Choose your interests.</p> 
+                    <p>Choose one interest at least.</p>      
+                </div>
+                <div class="row">
+                    <div class="col-3"><p><input type="checkbox" name="interestArt" value="Art"><span class="radiotext" >Art</span></p></div>
+                    <div class="col-3"><p><input type="checkbox" name="interestHistory" value="History"><span class="radiotext" >History</span></p></div>
+                    <div class="col-3"><p><input type="checkbox" name="interestSociology" value="Sociology"><span class="radiotext" >Sociology</span></p></div>
+                    <div class="col-3"><p><input type="checkbox" name="interestArchitecture" value="Architecture"><span class="radiotext" >Architecture</span></p></div>
+                    <div class="col-3"><p><input type="checkbox" name="interestWildlife" value="Wildlife"><span class="radiotext" >Wildlife</span></p></div>
+                    <div class="col-3"><p><input type="checkbox" name="interestNatural" value="Natural"><span class="radiotext" >Natural History</span></p></div>
+                    <div class="col-3"><p><input type="checkbox" name="interestPhotography" value="Photography"><span class="radiotext" >Photography</span></p></div>
+                    <div class="col-3"><p><input type="checkbox" name="interestOther" value="Other"><span class="radiotext" >Other</span></p></div>
+                </div>
+            </section>
+            <!--section 5 start here-->
+            <section id="section5">
+                <!--accomodation choices-->
+                <p class="label"><label id="labelaccomodation" for="accommodation">17.Preferred accommodation:&nbsp;&nbsp;<button class="helper" id="helper_17" type="button">?</button></label></p>
+                <div class="tips" id="tips_17">
+                    <p>Choose your preferred accommodation.</p> 
+                    <p>Choose your preferred accommodation if they are in the below list.</p>      
+                </div>
+                <div class="row">
+                    <div class="col-3"><p><input type="checkbox" name="accommodationHotel" value="Hotel"><span class="radiotext" >Hotel</span></p></div>
+                    <div class="col-3"><p><input type="checkbox" name="accommodationMotel" value="Motel"><span class="radiotext" >Motel</span></p></div>
+                    <div class="col-3"><p><input type="checkbox" name="accommodationAirbnb" value="Airbnb"><span class="radiotext" >Airbnb</span></p></div>
+                    <div class="col-3"><p><input type="checkbox" name="accommodationStu" value="StudentAccommodation"><span class="radiotext" >Student Accommodation</span></p></div>
+                    <div class="col-3"><p><input type="checkbox" name="accommodationBackpacker" value="Backpacker"><span class="radiotext" >Backpacker's Accommodation</span></p></div>
+                    <div class="col-3"><p><input type="checkbox" name="accommodationCamping" value="Camping"><span class="radiotext" >Camping</span></p></div>
+                    <div class="col-3"><p><input type="checkbox" name="accommodationOther" value="Other"><span class="radiotext" >Other</span></p></div>
+                </div>
+                <!--hotel start-->
+                <p class="label"><label id="labelhotelstart" for="hotelstart">18.Preferred Hotel Star:&nbsp;&nbsp;<button class="helper" id="helper_18" type="button">?</button></label></p>
+                <div class="tips" id="tips_18">
+                    <p>Choose your acceptable hotel star.</p> 
+                    <p>Choose your acceptable hotel start if they are in the below list.</p>        
+                </div>
+                <div class="row">
+                    <div class="col-3"><p><input type="checkbox" name="hotelstart3" value="3Star"><span class="radiotext" >3 Star</span></p></div>
+                    <div class="col-3"><p><input type="checkbox" name="hotelstart4" value="4Star"><span class="radiotext" >4 Star</span></p></div>
+                    <div class="col-3"><p><input type="checkbox" name="hotelstart5" value="5Star"><span class="radiotext" >5 Star</span></p></div>
+                </div>
+                <!--preferred room-->
+                <p class="label"><label id="labelroomtype" for="roomtype">19.Preferred Room Type:&nbsp;&nbsp;<button class="helper" id="helper_19" type="button">?</button></label></p>
+                <div class="tips" id="tips_19">
+                    <p>Choose your acceptable room type.</p> 
+                    <p>Choose your acceptable room type if they are in the below list.</p>        
+                </div>
+                <div class="row">
+                    <div class="col-3"><p><input type="radio" name="roomtype" value="Single" checked><span class="radiotext" >Single</span></p></div>
+                    <div class="col-3"><p><input type="radio" name="roomtype" value="Shared"><span class="radiotext" >Shared</span></p></div>
+                </div>
+                <!--transportation mode-->
+                <p class="label"><label id="labeltravelmode" for="travelmode">20.Preferred Travel Mode:&nbsp;&nbsp;<button class="helper" id="helper_20" type="button">?</button></label></p>
+                <div class="tips" id="tips_20">
+                    <p>Choose your liked travel mode.</p> 
+                    <p>Choose your acceptable travel mode if they are in the below list.</p>           
+                </div>
+                <div class="row">
+                    <div class="col-3"><p><input type="checkbox" name="travelmodeAir" value="Air"><span class="radiotext" >Air</span></p></div>
+                    <div class="col-3"><p><input type="checkbox" name="travelmodeWater" value="Water"><span class="radiotext" >Water</span></p></div>
+                    <div class="col-3"><p><input type="checkbox" name="travelmodeTrain" value="Train"><span class="radiotext" >Train</span></p></div>
+                    <div class="col-3"><p><input type="checkbox" name="travelmodeBus" value="Bus"><span class="radiotext" >Bus</span></p></div>
+                    <div class="col-3"><p><input type="checkbox" name="travelmodeCar" value="Car"><span class="radiotext" >Car</span></p></div>
+                    <div class="col-3"><p><input type="checkbox" name="travelmodeBicycle" value="Bicycle"><span class="radiotext" >Bicycle</span></p></div>
+                    <div class="col-3"><p><input type="checkbox" name="travelmodeDonkey" value="Donkey"><span class="radiotext" >Donkey</span></p></div>
+                    <div class="col-3"><p><input type="checkbox" name="travelmodeCamel" value="Camel"><span class="radiotext" >Camel</span></p></div>
+                    <div class="col-3"><p><input type="checkbox" name="travelmodeOther" value="Other"><span class="radiotext" >Other</span></p></div>
+                </div>
+                <!--preferred environment-->
+                <p class="label"><label id="labelenvironments" for="environments">21.Preferred Travel Environments?&nbsp;&nbsp;<button class="helper" id="helper_21" type="button">?</button></label></p>
+                <div class="tips" id="tips_21">
+                    <p>Choose your liked travel mode.</p> 
+                    <p>Choose your acceptable travel mode if they are in the below list.</p>           
+                </div>
+                <div class="row">
+                    <div class="col-3"><p><input type="checkbox" name="environmentsCity" value="City"><span class="radiotext" >City</span></p></div>
+                    <div class="col-3"><p><input type="checkbox" name="environmentsCountry" value="Country"><span class="radiotext" >Country</span></p></div>
+                    <div class="col-3"><p><input type="checkbox" name="environmentsNatural" value="Natural"><span class="radiotext" >Natural</span></p></div>
+                    <div class="col-3"><p><input type="checkbox" name="environmentsMountains" value="Mountains"><span class="radiotext" >Mountains</span></p></div>
+                    <div class="col-3"><p><input type="checkbox" name="environmentsDesert" value="Desert"><span class="radiotext" >Desert</span></p></div>
+                    <div class="col-3"><p><input type="checkbox" name="environmentsRainForest" value="Rain Forest"><span class="radiotext" >Rain Forest</span></p></div>
+                    <div class="col-3"><p><input type="checkbox" name="environmentsCostal" value="Costal"><span class="radiotext" >Costal</span></p></div>
+                    <div class="col-3"><p><input type="checkbox" name="environmentsInland" value="Inland"><span class="radiotext" >Inland</span></p></div>
+                    <div class="col-3"><p><input type="checkbox" name="environmentsOther" value="Other"><span class="radiotext" >Other</span></p></div>
+                </div>
+                <!--preferred destination-->
+                <p class="label"><label id="labeldestinations:" for="destinations:">22.Preferred destinations:&nbsp;&nbsp;<button class="helper" id="helper_22" type="button">?</button></label></p>
+                <div class="tips" id="tips_22">
+                    <p>Choose your preferred destinations.</p> 
+                    <p>Choose one or more your preferred destination.</p>           
+                </div>
+                <select id="destination" name="read[]" size="10" multiple="multiple"
+                        style="margin: 1ex 0 1ex 0" >
+                    <optgroup label="Africa">
+                        <option value="1.1">Eastern</option>
+                        <option value="1.2">Middle</option>
+                        <option value="1.3">Northern</option>
+                        <option value="1.4">Western</option>
+                        <option value="1.5">Southern</option>
+                        <option value="1.6">Others</option>
+                    </optgroup>
+                    <optgroup label="Asia">
+                        <option value="2.1">China</option>
+                        <option value="2.2">India</option>
+                        <option value="2.3">Malaysia</option>
+                        <option value="2.4">Japan</option>
+                        <option value="2.5">North Korea</option>
+                        <option value="2.6">Others</option>
+                    </optgroup>
+                    <optgroup label="Central America">
+                        <option value="3.1">Mexico</option>
+                        <option value="3.2">Honduras</option>
+                        <option value="3.3">Panama</option>
+                        <option value="3.4">Others</option>
+                    </optgroup>
+                    <optgroup label="Europe">
+                        <option value="4.1">Russia</option>
+                        <option value="4.2">Iceland</option>
+                        <option value="4.3">Belarus</option>
+                        <option value="4.4">Norway</option>
+                        <option value="4.5">Switzerland</option>
+                        <option value="4.6">United Kingdom</option>
+                        <option value="4.7">Belgium</option>
+                        <option value="4.8">France</option>
+                        <option value="4.9">Spain</option>
+                        <option value="4.10">Others</option>
+                    </optgroup>
+                    <optgroup label="North America">
+                        <option value="5.1">Canada</option>
+                        <option value="5.2">Greenland</option>
+                        <option value="5.3"> U.S.A</option>
+                        <option value="5.4">Others</option>
+                    </optgroup>
+                    <optgroup label="Oceania">
+                        <option value="6.1">Papua New Guinea</option>
+                        <option value="6.2">Samoa</option>
+                        <option value="6.3">New Zealand</option>
+                        <option value="6.4">Australia</option>
+                        <option value="6.5">Others</option>
+                    </optgroup>
+                </select>
+                <!--what more-->
+                <p class="label"><label id="labelwanted" for="wanted:">23.Tell us more you wanted:&nbsp;&nbsp;<button class="helper" id="helper_23" type="button">?</button></label></p>
+                <div class="tips" id="tips_23">
+                    <p>Input more you want to tell us?</p> 
+                    <p>Input some words to detail your wanted travel?</p>           
+                </div>
+                <textarea rows="4" cols="50" name="wanted" form="form1"></textarea>
+            </section>
+            <p id="formOperation" class="formControl">
+                <button type="button" class="previous">Previous</button>                                
+                <button type="button" class="next">Next</button>
+                <button class="submit" type="submit" form="form1" value="Submit">Submit</button>
+            </p>
+            <br>
+            <br>
+				<!--Process indicator-->
+              <p class="left">Process:<progress class="progressID" max="23" value="0" >0%</progress></p>
+        </form>
+
+
+
+
+
+
+    </body>
+</html>
