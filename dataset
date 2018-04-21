@@ -1,3 +1,4 @@
+ID,Binary flag,Mass,Radius[Jupiter radii],Period [days],Semi-major axis [Astronomical Units],Eccentricity,Periastron,Longitude[degree],Ascending node[degree],Inclination[degree],Surface or equilibrium temperature[K],Age[Gyr],Discovery method,Discovery year,Last updated,Right ascension,Declination,Distance from Sun [parsec],Host star mass [Solar masses],Host star radius [Solar radii],Host star metallicity [log relative to solar],Host star temperature[K],Host star age[Gyr],Planet Detection Status List
 HD 143761 b,0,1.045,,39.8458,0.2196,0.037,270.6,,,,,,RV,2016,16/07/11,16 01 03,+33 18 13,17.236,0.889,1.362,-0.31,5627.0,,Confirmed planets
 HD 143761 c,0,0.079,,102.54,0.4123,0.05,190.0,,,,,,RV,2016,16/07/11,16 01 03,+33 18 13,17.236,0.889,1.362,-0.31,5627.0,,Confirmed planets
 KOI-1843.03,0,0.0014,0.054,0.1768913,0.0048,,,,,72,,,transit,2012,13/07/15,19 00 03.14,+40 13 14.7,,0.46,0.45,0.0,3584,,Controversial
