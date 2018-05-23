@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <script src="https://d3js.org/d3.v4.js"></script>
+
+</head>
+<body>
+
+<h1>This is a Heading</h1>
+<p>This is a paragraph.</p>
+<script>
+
+
+d3.select("body").transition()
+    .delay(750)
+    .on("start", function() { d3.select(this).style("color", "green"); }).delay(2550)
+    .style("color", "red");
+</script>
+</body>
+</html>
