@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+  <title>d3 demo</title>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+  <!-- style file-->
+  <link rel="stylesheet" type="text/css" href="histogramV4.css">
+
+
+  
+
+  <!-- d3 library -->
+  <script src="https://d3js.org/d3.v4.js"></script>
+ 
+</head>
+<body>
+
+	<div class="container-fluid">
+  <h1>My First Bootstrap Page</h1>      
+  <p>This part is inside a .container-fluid class.</p> 
+  <p>The .container-fluid class provides a full width container, spanning the entire width of the viewport.</p>           
+</div>
+
+<div class="btn-group">
+  <button id="pickButton" type="button" class="btn btn-primary">Select...</button>
+  <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+    <span class="caret"></span>
+  </button>
+  <ul id="attributeList" class="dropdown-menu" role="menu">
+    <li><a href="#">Test,delete later</a></li>
+    <li><a href="#">Test, delete later</a></li>
+  </ul>
+</div>
+
+<button type="button"  class="btn">Basic</button>
+<button type="button" id="plot1" class="btn btn-default">Host_star_temperature</button>
+<button type="button" id="plot2" class="btn btn-primary">Host_star_metallicity</button>
+<button type="button" class="btn btn-success">Success</button>
+<button type="button" class="btn btn-info">Info</button>
+<button type="button" class="btn btn-warning">Warning</button>
+<button type="button" class="btn btn-danger">Danger</button>
+<button type="button" class="btn btn-link">Link</button>
+
+  <div id="demo"></div>
+  <div id="scatter"></div>
+  
+</body>
+<script src="histogramV4.js" type="text/javascript"></script>
+</html>
