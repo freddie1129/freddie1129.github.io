@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <!-- web page title -->
+  <title>CSC8422 Assignment 4</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- import d3 library -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://d3js.org/d3.v4.js"></script>
+  <!-- import bootstrap library -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <!-- style file-->
+  <link rel="stylesheet" type="text/css" href="index.css">
+</head>
+
+<body>
+
+    <h1>Exoplanet Exploration</h1>
+    <p class="introduction"><b>Introduction:</b> This visualization provides an easy way to understand the distribution of a specific attribute value. <b>Tips:</b> 1. Select an attribute by clicking an attribute button. 2. Zoom-in or Zoom-out the histogram by rolling the mouse wheel up and down. 3. Set the observation range by moving the left and right edge of the grey rectangle on the small histogram. 4. Move the grey rectangle to change the observation range. 5. Change the window side to redraw the plots. </p>
+    <!--Loading Text-->
+    <div id="loading">
+        <div class="loader"></div>
+        <p class="center">Loading</p>
+    </div>
+
+    <div class="container-fluid" id="plotCanvas">
+      <div class="row">
+        
+        <!-- Control Panel -->
+        <div class="col-sm-2" id="controlArea">
+          <div class="panel panel-default">
+            <!--select a attribute to plot-->
+            <p class="caption">Select a attribute...</p>
+            <div id="attrPicker"></div>
+                      <!--select a plot color -->
+            <div id="colorPicker">
+              <label for="colorWell">Color:</label>
+              <input type="color" value="#ff0000" id="colorWell">
+            </div>
+          </div>
+        </div>
+
+        <!-- Plot Area -->
+        <div class="col-sm-10" id="viewArea">
+          <!--Histogram plot Area-->
+          <div class="panel panel-default" id="hisPanel">
+              <div id="histogram"></div>
+          </div>
+          <!--Scatter plot Area-->
+          <div class="panel panel-default">
+            <div id="scatter"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <a href="barchart.html">Other page</a>
+</body>
+
+<!--d3 javascript code -->
+<script src="index.js" type="text/javascript"></script>
+
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>assign3</title>
+        <!-- style file-->
+        <link rel="stylesheet" type="text/css" href="planet.css">
+        <!-- d3 library -->
+        <script src="https://d3js.org/d3.v4.min.js"></script>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    </head>
+
+    <body>
+        <p class="studentInfo">Student Name: Chen Zhu&nbsp;&nbsp;&nbsp;&nbsp;Student ID: 10061098252</p>
+        <h1>Exoplanet Exploration</h1>
+        <!--Introduction-->
+        <p class="introduction"><b>Introduction:</b> This chart depicts the number of exoplanets found by a specific method in a specific year. Four general methods are represented by four different colour bar, and the unknown method means the method is not clear due to the lack of data in the dataset. The height of the bar represents the number of the exoplanets found by this method. All data is sorted in the timeline. For some unclear reasons, some exoplanets' found year is not clear, so all of them are categorized into the unknown group at the most left of the timeline. Click <a href="#table">here</a> to see all the exoplanets table.</p>
+
+        <!--Bar chart-->
+        <div id="barchart">
+            <form>
+                <!--switch the bar chart style by clicking the button, group bar chart & stacked bar chart-->
+                <label><input type="radio" name="mode" value="grouped"> Grouped</label>
+                <label><input type="radio" name="mode" value="stacked" checked> Stacked</label>
+            </form>
+            <!--Draw bar chart here by d3-->
+            <svg></svg>
+            <!--bar chart legend-->
+            <div class="barsign">
+                <div class="sign" id="MethodRV">RV</div>
+                <div class="sign" id="MethodTransit">Transit</div>
+                <div class="sign" id="MethodImaging">Imaging</div>
+                <div class="sign" id="MethodMicrolensing">Microlensign</div>
+                <div class="sign" id="MethodNonClear">Unknown</div>
+            </div>
+        </div>
+        <p class="tableTitle">Exoplanets Data Table</p>
+        <!--generated datatabe by d3 here-->
+        <div id="table"></div>
+        <!--js for this design-->
+        <script src="planet.js" type="text/javascript"></script>
+    </body>
+</html>
