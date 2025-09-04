@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -134,6 +135,14 @@
             box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
         }
 
+        .qr-code-icon {
+            width: 83px;
+            height: 83px;
+            border: 1px solid rgba(30, 60, 114, 0.1);
+            border-radius: 4px;
+            padding: 2px;
+        }
+
         .app-card h4 {
             margin-bottom: 8px;
             font-size: 1.3rem;
@@ -167,6 +176,8 @@
             flex-wrap: wrap;
         }
 
+
+
         .download-btn {
             display: inline-block;
             transition: transform 0.3s ease;
@@ -188,97 +199,11 @@
             gap: 15px;
         }
 
-        .skill-tag {
-            background: linear-gradient(135deg, #1e3c72, #2a5298);
-            color: white;
-            padding: 12px 20px;
-            border-radius: 25px;
-            text-align: center;
-            font-weight: 500;
-            transition: transform 0.3s ease;
-        }
-
-        .skill-tag:hover {
-            transform: scale(1.05);
-        }
-
-        .job {
-            border-left: 4px solid #2a5298;
-            padding-left: 25px;
-            margin-bottom: 35px;
-            position: relative;
-        }
-
-        .job::before {
-            content: '';
-            position: absolute;
-            left: -8px;
-            top: 0;
-            width: 12px;
-            height: 12px;
-            background: #2a5298;
-            border-radius: 50%;
-        }
-
-        .job-header {
-            margin-bottom: 15px;
-        }
-
-        .company {
-            font-size: 1.3rem;
-            font-weight: 600;
-            color: #1e3c72;
-            margin-bottom: 5px;
-        }
-
-        .position {
-            font-size: 1.1rem;
-            color: #666;
-            margin-bottom: 5px;
-        }
-
-        .duration {
-            color: #888;
-            font-style: italic;
-        }
-
-        .job-description {
-            color: #555;
-            line-height: 1.7;
-        }
-
-        .job-description ul {
-            margin-left: 20px;
-            margin-top: 10px;
-        }
-
-        .job-description li {
-            margin-bottom: 8px;
-        }
-
-        .education-item {
-            background: rgba(30, 60, 114, 0.05);
-            padding: 20px;
-            border-radius: 15px;
-            margin-bottom: 20px;
-            border-left: 4px solid #2a5298;
-        }
-
-        .degree {
-            font-size: 1.2rem;
-            font-weight: 600;
-            color: #1e3c72;
-            margin-bottom: 5px;
-        }
-
-        .school {
-            color: #666;
-            margin-bottom: 5px;
-        }
-
-        .education-details {
-            color: #888;
-            font-size: 0.95rem;
+        .qr-section {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 10px;
         }
 
         @keyframes fadeInDown {
@@ -286,6 +211,7 @@
                 opacity: 0;
                 transform: translateY(-30px);
             }
+
             to {
                 opacity: 1;
                 transform: translateY(0);
@@ -297,6 +223,7 @@
                 opacity: 0;
                 transform: translateY(30px);
             }
+
             to {
                 opacity: 1;
                 transform: translateY(0);
@@ -307,146 +234,107 @@
             .container {
                 padding: 15px;
             }
-            
-            .header, .section {
+
+            .header,
+            .section {
                 padding: 30px 25px;
             }
-            
+
             .name {
                 font-size: 2.5rem;
             }
-            
+
             .contact-info {
                 flex-direction: column;
                 align-items: center;
                 gap: 15px;
             }
-            
+
             .skills-grid {
                 grid-template-columns: 1fr;
             }
         }
     </style>
 </head>
+
 <body>
     <div class="container">
         <div class="header">
-            <h1 class="name">Zhu (Freddie) Chen</h1>
-            <div class="title">Senior Mobile Developer (Android & iOS)</div>
+            <h1 class="name">Zhu(Freddie) Chen</h1>
+            <div class="title">Senior Mobile Developer</div>
             <div class="contact-info">
                 <a href="mailto:freddiechenchen@gmail.com" class="contact-item">✉️ freddiechenchen@gmail.com</a>
                 <div class="contact-item">📍 Gold Coast, Australia</div>
-      
             </div>
         </div>
 
         <div class="section">
-            <h2>Professional Summary</h2>
-            <p class="summary-text">
-                Experienced mobile developer with <strong>8 years of hands-on experience in native Android development</strong> and <strong>3 years in native iOS development</strong>, covering the full mobile development lifecycle from design and implementation to testing and deployment.
-            </p>
-            
-            <h3 style="color: #1e3c72; margin: 30px 0 20px 0; font-size: 1.3rem;">Published Personal Portfolio Apps</h3>
+            <h2>Published Personal Portfolio Apps</h2>
             <div class="apps-grid">
                 <div class="app-card">
                     <img src="sun-finder.webp" alt="Sun Finder App Icon" class="app-icon">
                     <h4>Sun Finder</h4>
                     <div class="app-platform">iOS & Android</div>
-                    <p class="app-description">Predict and visualise the sun's path on a Map or an AR view for anywhere and anytime.</p>
+                    <p class="app-description">Predict and visualise the sun's path on a Map or an AR view for anywhere
+                        and anytime.</p>
                     <div class="download-links">
-                        <a href="https://apps.apple.com/au/app/sun-finder/id6746398268" class="download-btn"><img src="app-store.svg" alt="Download on App Store"></a>
-                        <a href="https://play.google.com/store/apps/details?id=com.gooludou.app.sunfinder" class="download-btn"><img src="google-play.png" alt="Get it on Google Play"></a>
+                        <div class="qr-section">
+                            <img src="sunfinder-ios.png" alt="Sun Finder App Store QR Code" class="qr-code-icon">
+                            <a href="https://apps.apple.com/au/app/sun-finder/id6746398268" class="download-btn"><img
+                                    src="app-store.svg" alt="Download on App Store"></a>
+                        </div>
+                        <div class="qr-section">
+                            <img src="sunfinder-android.png" alt="Sun Finder Google Play QR Code" class="qr-code-icon">
+                            <a href="https://play.google.com/store/apps/details?id=com.gooludou.app.sunfinder"
+                                class="download-btn"><img src="google-play.png" alt="Get it on Google Play"></a>
+                        </div>
                     </div>
-                     <p class="app-publish-note">*Published under a family account</p>
+                    <p class="app-publish-note">*Published under a family account</p>
                 </div>
                 <div class="app-card">
                     <img src="bluetooth-scanner.webp" alt="Bluetooth Scanner App Icon" class="app-icon">
                     <h4>Bluetooth Scanner</h4>
                     <div class="app-platform">Android</div>
-                    <p class="app-description">Scanning Bluetooth Ble devices and sorting the devices by RSSI, scanned time and devices name.</p>
+                    <p class="app-description">Scanning Bluetooth Ble devices and sorting the devices by RSSI, scanned
+                        time and devices name.</p>
+
+
+
                     <div class="download-links">
-                        <a href="https://play.google.com/store/apps/details?id=com.gooludou.bluetoothscanner" class="download-btn"><img src="google-play.png" alt="Get it on Google Play"></a>
+                        <div class="qr-section">
+                            <img src="bluetoothscanner-android.png" alt="Bluetoothscanner Google Play QR Code"
+                                class="qr-code-icon">
+                            <a href="https://play.google.com/store/apps/details?id=com.gooludou.bluetoothscanner"
+                                class="download-btn"><img src="google-play.png" alt="Get it on Google Play"></a>
+                        </div>
                     </div>
+
                 </div>
                 <div class="app-card">
                     <img src="math-symbol.webp" alt="Math Symbol App Icon" class="app-icon">
                     <h4>Math Symbol</h4>
                     <div class="app-platform">Android</div>
-                    <p class="app-description">Help students learn and remember the English names of essential math symbols across various categories.</p>
+                    <p class="app-description">Help students learn and remember the English names of essential math
+                        symbols
+                        across various categories.</p>
+
+
+
                     <div class="download-links">
-                        <a href="https://play.google.com/store/apps/details?id=com.fredroid.mathsymbol" class="download-btn"><img src="google-play.png" alt="Get it on Google Play"></a>
+                        <div class="qr-section">
+                            <img src="mathsymbol-android.png" alt="Mathsymbol Google Play QR Code" class="qr-code-icon">
+                            <a href="https://play.google.com/store/apps/details?id=com.fredroid.mathsymbol"
+                                class="download-btn"><img src="google-play.png" alt="Get it on Google Play"></a>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
 
-        <div class="section">
-            <h2>Technical Skills</h2>
-            <ul style="list-style-type: disc; margin-left: 20px; color: #555; font-size: 1.1rem; line-height: 1.8;">
-                <li>Proficient in <strong>Java</strong>, <strong>Kotlin</strong>, and <strong>Swift</strong>.</li>
-                <li>Expertise in asynchronous programming using <strong>RxJava</strong>, <strong>RxKotlin</strong>, <strong>RxSwift</strong> and <strong>Kotlin Coroutines</strong> to build responsive and scalable applications.</li>
-                <li>Extensive experience with dependency injection(<strong>Dagger/Hilt</strong>) and <strong>Android Jetpack Components</strong>, including Room, Navigation, WorkManager, Paging, Deeplink, etc.</li>
-                <li>Strong experience in traditional Views and currently transitioning to <strong>Jetpack Compose.</strong></li>
-                <li>Solid background in designing and implementing <strong>MVVM</strong> architectures, promoting clean code and maintainability.</li>
-                <li>Skilled in integrating and consuming <strong>RESTful APIs</strong>, ensuring robust and efficient client-server communication.</li>
-                <li>Skilled in Android testing using <strong>JUnit</strong> and <strong>Espresso</strong>.</li>
-                <li>Hands-on experience with tools and platforms such as <strong>Firebase</strong>, <strong>Git</strong>, <strong>Postman</strong>, <strong>Azure CI/CD</strong> pipelines, <strong>Google Play Console</strong>, and <strong>App Store Connect</strong>.</li>
-            </ul>
-        </div>
 
-        <div class="section">
-            <h2>Professional Experience</h2>
-            
-            <div class="job">
-                <div class="job-header">
-                    <div class="company">Rinami, Gold Coast</div>
-                    <div class="position">Senior Mobile Developer (Android & iOS)</div>
-                    <div class="duration">Aug 2020 - PRESENT</div>
-                </div>
-                <div class="job-description">
-                    <ul>
-                        <li>Designed, implemented, and maintained an Android SDK and an iOS SDK to streamline the mobile team's client app development, significantly improving code reuse and development efficiency.</li>
-                        <li>Analysed business requirements, designed scalable solutions, and delivered high-quality mobile applications for enterprise clients, with a focus on asset management, warehouse management, purchasing and checklist applications.</li>
-                        <li>Mentored junior developers and collaborated with backend, QA, and design teams to ensure cohesive and high-quality deliverables.</li>
-                    </ul>
-                </div>
-            </div>
 
-            <div class="job">
-                <div class="job-header">
-                    <div class="company">Sprint Digital, Brisbane</div>
-                    <div class="position">Android Developer</div>
-                    <div class="duration">Oct 2017 - Aug 2020</div>
-                </div>
-                <div class="job-description">
-                    <ul>
-                        <li>Developed and delivered dozens of Android apps for small to mid-sized business clients.</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
 
-        <div class="section">
-            <h2>Education</h2>
-            
-            <div class="education-item">
-                <div class="degree">Master of Computing Technology</div>
-                <div class="school">University of Southern Queensland</div>
-                <div class="education-details">Feb 2017 - Nov 2018, Toowoomba, Australia | GPA: 6.38</div>
-            </div>
 
-            <div class="education-item">
-                <div class="degree">Master of Communication and Information Systems</div>
-                <div class="school">Academy of Equipment</div>
-                <div class="education-details">Sep 2004 - July 2007, China</div>
-            </div>
-
-            <div class="education-item">
-                <div class="degree">Bachelor of Measurement and Control Technology and Instrumentation</div>
-                <div class="school">The First Aeronautics College of the Air Force</div>
-                <div class="education-details">Sep 2000 - July 2004, China</div>
-            </div>
-        </div>
-    </div>
 </body>
+
 </html>
